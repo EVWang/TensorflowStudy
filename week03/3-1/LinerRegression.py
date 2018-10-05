@@ -24,8 +24,10 @@ L1 = tf.nn.tanh(Wx_plus_b_L1)
 
 #定义神经元输出层
 Weights_L2 = tf.Variable(tf.random_normal([10,1]))
+# 偏置值
 biase_L2 = tf.Variable(tf.zeros([1,1]))
 Wx_plus_b_L2 = tf.matmul(L1,Weights_L2) + biase_L2
+# 预测值
 prediction  = tf.nn.tanh(Wx_plus_b_L2)
 
 # 二次代价函数
