@@ -15,7 +15,7 @@ def fetch():
 
 #Feed
 def feed():
-    # 创建占位符
+#创建占位符
     input1 = tf.placeholder(tf.float32)
     input2 = tf.placeholder(tf.float32)
     output = tf.multiply(input1,input2)
@@ -23,6 +23,6 @@ def feed():
     print(sess.run(output,feed_dict={input1:[8.0],input2:[2.0]}))
 
 if __name__ == '__main__':
-    # fetch()
-    feed()
+    fetch()
+    #feed()
 
